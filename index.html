@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Monthly Money Calculation</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <header class="my-7">
         <h1 class="text-center text-4xl font-bold text-emerald-700 my-4">Monthly Money Calculation</h1>
@@ -19,21 +21,33 @@
             <div class="bg-gray-200 px-20">
                 <div class="text-center pt-10 ">
                     <h1 class="text-center text-2xl font-bold mb-3">Income</h1>
-                    <p class="mb-5"><span>Income : </span> <input id="income-field" class="border-2 border-black rounded bg-slate-200 px-2" type="text"></p>
+                    <p class="mb-5"><span>Income : </span> <input id="income-field"
+                            class="border-2 border-black rounded bg-slate-200 px-2" type="text"></p>
                     <h1 class="text-center text-2xl font-bold mb-3">Expense</h1>
-                    <pre class="mb-2"><span>Food : </span> <input id="food-field" class="border-2 border-black rounded bg-slate-200 px-2" type="text"></pre>
-                    <pre class="mb-2"><span>Rent : </span> <input id="rent-field" class="border-2 border-black rounded bg-slate-200 px-2" type="text"></pre>
-                    <pre class="mb-2"><span>Cloths:</span> <input id="cloths-field" class="border-2 border-black rounded bg-slate-200 px-2" type="text"></pre>
-                    <button id="calculate-btn" class="rounded-md bg-sky-500 px-3 py-1 text-white mb-5">Calculate</button>
-                    <h1 class="text-center text-1xl font-bold mb-3">Total Expenses : <span id="total-expense-field">00</span></h1>
+                    <pre
+                        class="mb-2"><span>Food : </span> <input id="food-field" class="border-2 border-black rounded bg-slate-200 px-2" type="text"></pre>
+                    <pre
+                        class="mb-2"><span>Rent : </span> <input id="rent-field" class="border-2 border-black rounded bg-slate-200 px-2" type="text"></pre>
+                    <pre
+                        class="mb-2"><span>Cloths:</span> <input id="cloths-field" class="border-2 border-black rounded bg-slate-200 px-2" type="text"></pre>
+                    <button id="calculate-btn"
+                        class="rounded-md bg-sky-500 px-3 py-1 text-white mb-5">Calculate</button>
+                    <h1 class="text-center text-1xl font-bold mb-3">Total Expenses : <span
+                            id="total-expense-field">00</span></h1>
                     <h1 class="text-center text-1xl font-bold mb-3">Balance : <span id="balance-field">00</span></h1>
-                    <p class="mb-3">Save : <input id="percentage-field " class="bg-slate-200 w-[50px] border-2 border-black rounded px-2" type="text"> <span>%</span><button id="percentage-btn" class="rounded-md bg-sky-500 px-3 py-1 text-white ">Save</button></p>
-                    <h1 class="text-center text-1xl font-bold mb-3">Saving amount : <span id="saving-field">00</span></h1>
-                    <h1 class="text-center text-1xl font-bold mb-3">Remaining Balance : <span id="remaining-balance-field">00</span></h1>
+                    <p class="mb-3">Save : <input id="percentage-field"
+                            class="bg-slate-200 w-[50px] border-2 border-black rounded px-2" type="text">
+                        <span>%</span><button id="percentage-btn"
+                            class="rounded-md bg-sky-500 px-3 py-1 text-white ">Save</button></p>
+                    <h1 class="text-center text-1xl font-bold mb-3">Saving amount : <span id="saving-field">00</span>
+                    </h1>
+                    <h1 class="text-center text-1xl font-bold mb-3">Remaining Balance : <span
+                            id="remaining-balance-field">00</span></h1>
                 </div>
             </div>
         </div>
     </main>
     <script src="js/calculation.js"></script>
 </body>
+
 </html>

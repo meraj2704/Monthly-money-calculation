@@ -1,5 +1,5 @@
 // working on calculate btn
-document.getElementById('calculate-btn').addEventListener('click', function(){
+document.getElementById('calculate-btn').addEventListener('click', function () {
     // get user input income
     const incomeField = document.getElementById('income-field');
     const incomeFieldString = incomeField.value;
@@ -33,34 +33,35 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     const remaingBalanceField = document.getElementById('remaining-balance-field');
     remaingBalanceField.innerText = balance;
 })
-document.getElementById('percentage-btn').addEventListener('click', function(){
+document.getElementById('percentage-btn').addEventListener('click', function () {
     // get percentage value
-    const percentageField = document.getElementById('percentage-field');
+    const percentageField = document.getElementById("percentage-field");
     const percentageFieldString = percentageField.value;
-    const percentage = parseFloat(percentageFieldString); 
+    const percentage = parseFloat(percentageFieldString);
+   
+
     //get income amount
-    const incomeAmonutBalance =  document.getElementById('income-field');
+    const incomeAmonutBalance = document.getElementById('income-field');
     const incomeAmonutBalanceString = incomeAmonutBalance.value;
     const income = parseFloat(incomeAmonutBalanceString);
     // calculate percentage value
-    const percentageAmount = (income*percentage)/100;
+    const percentageAmount = (income * percentage) / 100;
     // update saings amount 
     const savingField = document.getElementById('saving-field');
-    
+
     const balanceField2 = document.getElementById('balance-field');
 
     const remaingBalanceField2 = document.getElementById('remaining-balance-field');
     const remaingBalanceField2String = remaingBalanceField2.innerText;
     const remainBalance2 = parseFloat(remaingBalanceField2String);
-    const newRemainingBalance = remainBalance2-percentageAmount;
-    if(newRemainingBalance>0)
-    {
+    const newRemainingBalance = remainBalance2 - percentageAmount;
+    if (newRemainingBalance > 0) {
         savingField.innerText = percentageAmount;
         remaingBalanceField2.innerText = newRemainingBalance;
         balanceField2.innerText = newRemainingBalance;
     }
-    else
-    {
-        alert("you cant save "+percentage+"%. Please update.");
+    else {
+        alert("you cant save " + percentage + "%. Please update.");
     }
 })
+document.getElementById('')
